@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+:root , :root.dark{
+    --primary-bg:#22252d;
+    --secondary-bg:#292d36;
+    --color-fg:#f8f8f8;
+    --box-shadow: 1px 1px rgb(88, 87, 87),0 2px 2px rgb(100 , 98, 98); 
+}
+:root.light
+{
+    --primary-bg:#f6f4f4;
+    --color-fg:#292d36;
+    --secondary-bg:#f0eeee;
+    --box-shadow:0 2px 3px rgb(100 , 98, 98); 
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+.display
+{
+    background-color: var(--primary-bg);
+    min-height: 100px;
+    height:120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    flex: 1 1 0%;
+    padding:15px 20px;
+    color: var(--color-fg);
+}
+.display .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 100%;
+	overflow: auto;
+}
+.display .input
+{
+    font-size: 1.25rem;
+    margin-top: 0.4rem;
+}
+.display .output
+{
+   font-size: 2.5rem;
+   font-weight: 700;
+   width: 100%;
+   overflow: auto;
+   white-space: nowrap;
+}
+
+.container
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.calculator
+{
+   width: auto;
+   height: auto;
+   position: relative;
+   background-color: var(--primary-bg);
+   padding-top: 20px;
+   border-radius: 20px;
+
+}
+.heading
+{
+    height: 40px;
+    display: flex;
+    justify-content: space-between ; 
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    font-size: larger;
+    color:var(--color-fg);
+    /* border-bottom: 1px solid gray; */
+}
+.cir
+{
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+
+}
+.cir.one
+{
+    margin-right: 5px;
+    background-color: #ff6a00;
+}
+.cir.two
+{
+    margin-right: 5px;
+    background-color: #ee0979;
+}
+.cir.three
+{
+    margin-right: 5px;
+    background-color: #1fc5f8;
+}
+.head
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   font-size: 25px;
+}
+.keys{
+    background-color: var(--secondary-bg);
+    border-radius: 20px;
+    padding: 15px;
+}
+button{
+    height:48px;
+    width: 65px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px;
+    font-size: 20px;
+    background-color: var(--secondary-bg);
+    color: var(--color-fg);
+    /* box-shadow: 1px 1px rgb(88, 87, 87),0 2px 2px rgb(100 , 98, 98);  */
+    box-shadow: var(--box-shadow);
+}
+button#equal
+{
+    height: 120px;
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+button.fn-key
+{
+    background: linear-gradient(to bottom, #ff6a00, #ee0979);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+button.btn-opt
+{
+    color:#1fc5f8;
+    font-size: 25px;
+}
+button:hover{
+    transform: scale(1.11);
+}
+.dark-m{
+    margin:4px auto;
+    padding: 4px 6px;
+    border-radius: 8px;
+    background-color: var(--secondary-bg);
+}
+.dark-m .dark , .dark-m .light
+{
+    margin:2px 8px;
+    cursor:pointer;
+    font-size: 1rem;
+}

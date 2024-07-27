@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <!--modes -->
+            <div class="heading">
+                <span class="head">
+                    <div class="cir one"></div>
+                    <div class="cir two"></div>
+                    <div class="cir three"></div>
+                    Calc</span>
+                <span>
+                    <label class="dark-m">
+                        <span class="dark">&#9790</span>
+                        <span class="light">&#9728</span>
+                    </label>
+                </span>
+            </div>
+
+             <!--display content-->
+            <div class="display">
+                <div class="content">
+                    <div class="input"></div>
+                    <div class="output"></div>
+                </div>
+            </div>
+
+            <!--buttons-->
+            <div class="keys">
+                <table>
+                    <tr>
+                        <td><button class="key fn-key" data-key="clear">AC</button></td>
+                        <td><button class="key btn-opt" data-key="%">%</button></td>
+                        <td><button class="key btn-opt" data-key="/">&divide;</button></td>
+                        <td><button class="key btn-opt" data-key="*">&times;</button></td>
+                    </tr>
+                    <tr> 
+                        <td><button class="key" data-key="7">7</button></td>
+                        <td><button class="key" data-key="8">8</button></td>
+                        <td><button class="key" data-key="9">9</button></td>
+                        <td><button class="key btn-opt" data-key="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="key" data-key="4">4</button></td>
+                        <td><button class="key" data-key="5">5</button></td>
+                        <td><button class="key" data-key="6">6</button></td>
+                        <td><button class="key btn-opt" data-key="+">&plus;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="key" data-key="1">1</button></td>
+                        <td><button class="key" data-key="2">2</button></td>
+                        <td><button class="key" data-key="3">3</button></td>
+                        <td rowspan="2"><button class="key btn-opt" id="equal" data-key="equal">&equals;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="key fn-key" data-key="backspace">C</button></td>
+                        <td><button class="key" data-key="0">0</button></td>
+                        <td><button class="key" data-key=".">.</button></td>
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
